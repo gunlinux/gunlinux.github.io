@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<h2>Привет!</h2>
+
+<p>Я разрабатываю интерфейсы в <a href="#">Яндексе</a> (а если точнее — в Яндекс.Почте), иногда
+участвую в жизни русскоязычного сообщества «Веб-стандарты», занимаюсь всякими
+опенсорсными проектами, экспериментирую над CSS, интересуюсь типографикой, веду
+блог на этом сайте.</p>
+
+<h2>Последнее опубликованное</h2>
+
+<ul class="minipost">
+    {% for post in site.posts limit:3 %}
+      <li class="minipost__item">
+          <a class="minipost__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+          <time class="minipost__time" datetime="{{post.date | date: "%Y-%m-%d"}}">{{ post.date | date: "%d.%m.%Y" }}</time>
+      </li>
+    {% endfor %}
+</ul>
+
+<p>
+См. также список <a href="#">всех публикаций</a>.
+</p>
+
+
+<h2>Проекты</h2>
+
+<p>
+Я придумал Хаяку, Джекиллер и Бемто, поддерживаю Стайлус, и, по мере сил, помогаю ряду других опенсорсных проектов.
+</p>
+
+
+<h2>Как со мной связаться</h2>
+
+<p>Наилучший способ со мной связаться — написать мне что-нибудь по электронной почте — <a href="mailto:gunlinux@ya.ru">gunlinux@ya.ru</a>.</p>
+<p>Я присутствую во всяких социальных сетях, список которых я не вижу смысла
+приводить. Скорее всего, я не хочу присоединиться к сети ваших профессиональных
+контактов в LinkedIn, но вот если вы полайкаете котичек в моём инстаграмме — буду рад.</p>
+
+<!--
+<div class="home">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+-->

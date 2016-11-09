@@ -1,0 +1,48 @@
+.page {
+    margin: 0 auto;
+    font: 26px/1.5em Helvetica, Arial, sans-serif;
+    max-width: 32em;
+    background-image: -webkit-linear-gradient(#E7E3CF .1em, transparent .1em);
+    background-size: 100% 1.5em;
+    line-height: 1.5em;
+
+    &__content {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: serif;
+        }
+
+        h2 {
+            margin: 2em 0 1em 0;
+            font-size: 1.5em;
+            line-height: 2em;
+            background: rgba(0, 255, 0, 0.2);
+        }
+
+        ul {
+            margin: 2em 0 1em 0;
+            padding: 0;
+
+            li {
+
+                &:before {
+                    content: '—';
+                    flex-basis: 2em;
+                }
+
+                display: flex;
+                list-style: none;
+                margin: 1em 0 0.5em 0;
+            }
+        }
+
+        p {
+            margin: 2em 0 1em 0;
+            background: rgba(255, 0, 0, 0.4);
+        }
+    }
+}

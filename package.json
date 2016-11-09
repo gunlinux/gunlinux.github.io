@@ -1,0 +1,29 @@
+{
+  "name": "gunlinux.github.io",
+  "version": "0.0.1",
+  "description": "gunlinux's notes",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-postcss": "latest",
+    "stylelint": "latest",
+    "stylelint-config-standard": "latest"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gunlinux/gunlinux.github.io.git"
+  },
+  "keywords": [
+    "jekyll"
+  ],
+  "author": "gunlinux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gunlinux/gunlinux.github.io/issues"
+  },
+  "homepage": "https://github.com/gunlinux/gunlinux.github.io#readme"
+}

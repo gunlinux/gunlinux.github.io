@@ -1,0 +1,9 @@
+.footer {
+    margin: 2em 0 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__link {
+        line-height: 1em;
+    }
+}

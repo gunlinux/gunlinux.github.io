@@ -1,0 +1,23 @@
+.minipost {
+	&__link {
+		transition: all 0.2s ease-in-out;
+		color: #333;
+		text-align: center;
+		text-decoration: none;
+		border-bottom: 1px solid #ccc;
+		line-height: 1.5em;
+
+		&:hover {
+			border-color: #000;
+			color: #000;
+		}
+	}
+
+	&__item {
+	}
+
+	&__time {
+		display: block;
+		font-weight: 300;
+	}
+}
